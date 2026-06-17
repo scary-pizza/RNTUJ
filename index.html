@@ -54,10 +54,10 @@
                     </div>
 
                     <!-- Login -->
-                    <a href="#" class="login-btn">
+                    <button class="login-btn" id="btn-login">
                         <img src="assets/home_page/login_icon.png" alt="">
                         Login / Register
-                    </a>
+                    </button>
 
                 </div>
 
@@ -130,11 +130,11 @@
 
                         <div class="journal-buttons">
 
-                            <a href="#" class="primary-btn">
+                            <a href="article.html" class="primary-btn">
                                 View All Issues
                             </a>
 
-                            <a href="#" class="secondary-link">
+                            <a href="anusandhan.html" class="secondary-link">
                                 <div class="icon-circle"><img src="assets/home_page/explore_icon.png"
                                         alt="explore_icon"></div>
                                 Explore Journals
@@ -207,11 +207,11 @@
 
                         <div class="journal-buttons">
 
-                            <a href="#" class="primary-btn">
+                            <a href="article.html" class="primary-btn">
                                 View All Issues
                             </a>
 
-                            <a href="#" class="secondary-link">
+                            <a href="shodhaytan.html" class="secondary-link">
                                 <div class="icon-circle"><img src="assets/home_page/explore_icon.png"
                                         alt="explore_icon"></div>
                                 Explore Journals
@@ -850,7 +850,7 @@
                         </div>
                     </ol>
 
-                    <ol style="padding: 0;">
+                    <!-- <ol style="padding: 0;">
                         <div class="contact_item">
 
                             <div class="contact_icon">
@@ -869,7 +869,7 @@
                             </div>
 
                         </div>
-                    </ol>
+                    </ol> -->
 
                 </ul>
             </div>
@@ -896,10 +896,221 @@
         </div>
     </div>
 
+
+    <!-- login Popup -->
+    <div class="login-popup-overlay" id="loginPopup">
+        <div class="login-popup">
+
+            <!-- Image -->
+            <div class="popup-left">
+                <img src="assets/popup_img.png" alt="Login" />
+            </div>
+
+            <!-- Form -->
+            <div class="popup-right">
+                <!-- close Btn -->
+                <button class="close-btn popup-close">&times;</button>
+                <!-- Tabs -->
+                <div class="tab-buttons">
+                    <button class="login_tab_btn active" data-tab="student">
+                        Login Here
+                    </button>
+                    <button class="login_tab_btn" data-tab="staff">Forget Password</button>
+                </div>
+
+                <div class="random_wrapper_form-container">
+                    <div class="random_wrapper_form">
+
+                        <div class="xfw-form-panel random_staff_form random_active_form">
+
+                            <form>
+                                <label>Email</label>
+                                <input type="email" placeholder="Enter Email" />
+
+                                <label>Password</label>
+                                <input type="password" />
+
+                                <!-- <button class="btn-login-submit" type="submit"> Login </button> -->
+
+                                <a href="#" class="btn-login-submit" type="submit">Login Now</a>
+
+                                <p class="register-link">
+                                    Don’t have an account? <a id="btn-register" style="cursor: pointer; color:#002f6c ;" >Register Here</a>
+                                </p>
+                            </form>
+
+                        </div>
+
+                        <div class="xfw-form-panel random_student_form ">
+
+                            <form>
+                                <label>Mobile Number</label>
+                                <input type="text" placeholder="Enter Mobile Number" maxlength="10" />
+
+                                <div class="otp-container">
+                                    <label>OTP</label>
+                                    <div class="otp-inputs">
+                                        <input type="text" maxlength="1" />
+                                        <input type="text" maxlength="1" />
+                                        <input type="text" maxlength="1" />
+                                        <input type="text" maxlength="1" />
+                                        <input type="text" maxlength="1" />
+                                        <input type="text" maxlength="1" />
+                                    </div>
+                                    <small>Didn't receive the OTP?
+                                        <a href="#" style="color:#002f6c ;">Resend OTP</a></small>
+                                </div>
+
+                                <!-- <button class="btn-login-submit" type="submit"> Login </button> -->
+                                <a href="#" class="btn-login-submit" type="submit">Reset Password </a>
+                            </form>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Popup -->
+    <div class="login-popup-overlay" id="registerPopup">
+        <div class="login-popup">
+
+            <!-- Image -->
+            <div class="popup-left">
+                <img src="assets/popup_img.png" alt="Login" />
+            </div>
+
+            <!-- Form -->
+            <div class="popup-right">
+                <!-- close Btn -->
+                <button class="close-btn popup-close">&times;</button>
+                <!-- Tabs -->
+                <div class="tab-buttons">
+                    <button class="login_tab_btn active" data-tab="staff">
+                        Register Here
+                    </button>
+                </div>
+
+                <div class="random_wrapper_form-container">
+                    <div class="random_wrapper_form">
+
+                        <div class="xfw-form-panel random_staff_form random_active_form">
+
+                            <form>
+
+                                <label>Register Type</label>
+                                <select>
+                                    <option>Select Type</option>
+                                    <option>Editor</option>
+                                    <option>Author</option>
+                                    <option>General User / Reviewer</option>
+                                </select>
+
+                                <label>Full Name</label>
+                                <input placeholder="Enter Name" />
+
+                                <label>Mobile No.</label>
+                                <input placeholder="Enter Number" />
+
+                                <label>Email</label>
+                                <input type="email" placeholder="Enter Email" />
+
+                                <label>Create Password</label>
+                                <input type="password" placeholder="Enter Password" />
+
+                                <!-- <button class="btn-login-submit" type="submit"> Login </button> -->
+
+                                <a href="#" class="btn-login-submit" type="submit">Register Now</a>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+    <script>
+        // Popup
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const loginBtn = document.getElementById("btn-login");
+            const registerBtn = document.getElementById("btn-register");
+
+            const loginPopup = document.getElementById("loginPopup");
+            const registerPopup = document.getElementById("registerPopup");
+
+            // Open Login
+            loginBtn?.addEventListener("click", (e) => {
+                e.preventDefault();
+                loginPopup.style.display = "flex";
+            });
+
+            // Open Register
+            registerBtn?.addEventListener("click", (e) => {
+                e.preventDefault();
+                registerPopup.style.display = "flex";
+            });
+
+            // Close Buttons
+            document.querySelectorAll(".popup-close").forEach(btn => {
+
+                btn.addEventListener("click", () => {
+
+                    btn.closest(".login-popup-overlay").style.display = "none";
+
+                });
+
+            });
+
+            // Click Outside Close
+            document.querySelectorAll(".login-popup-overlay").forEach(popup => {
+
+                popup.addEventListener("click", (e) => {
+
+                    if (e.target === popup) {
+                        popup.style.display = "none";
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
+    <script>
+        // Tab Switching
+        const tabBtns = document.querySelectorAll(".login_tab_btn");
+        const formWrapper = document.querySelector(".random_wrapper_form");
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                tabBtns.forEach(tab => tab.classList.remove("active"));
+                btn.classList.add("active");
+
+                if (btn.dataset.tab === "student") {
+                    formWrapper.style.transform = "translateX(0)";
+                } else {
+                    formWrapper.style.transform = "translateX(-50%)";
+                }
+            });
+        });
+
+    </script>
+
+
 </body>
-
-<script src="js/main.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
-
 
 </html>
