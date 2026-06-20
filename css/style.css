@@ -367,6 +367,16 @@ a {
     gap: 10px;
 }
 
+.field-item-2 {
+    padding: 15px 20px;
+}
+
+.field-item-2 a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: underline !important;
+}
+
 .number {
     width: 40px;
     height: 40px;
@@ -483,6 +493,14 @@ a {
         padding: var(--fs-18) !important;
         text-align: center;
     }
+
+    .search-box input {
+        width: 100px;
+    }
+
+    .nav-links a {
+        padding: 12px 10px;
+    }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
@@ -497,6 +515,22 @@ a {
     .journal-card .journal-content .info_rntu_j {
         width: 75%;
     }
+
+
+    .nav-links a {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .search-box input {
+        width: 100px;
+    }
+
+    .login-btn {
+        padding: 11px 10px;
+        font-size: var(--fs-13);
+    }
+
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1399px) {
@@ -505,7 +539,7 @@ a {
     }
 
     .search-box input {
-        width: 140px;
+        width: 100px;
     }
 
     .login-btn {
@@ -1765,7 +1799,7 @@ a {
     }
 
     .login-btn {
-        font-size: var(--fs-14);
+        font-size: var(--fs-13);
     }
 }
 
@@ -2091,7 +2125,8 @@ a {
 .editor-card-border p {
     font-size: 15px;
     color: #555;
-    line-height: 1;
+    line-height: 1.2;
+    text-align: justify;
 }
 
 .links {
@@ -3635,4 +3670,41 @@ select {
     .popup-right {
         padding: 20px;
     }
+}
+
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
 }
