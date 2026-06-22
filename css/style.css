@@ -2764,7 +2764,7 @@ a {
     flex-shrink: 0;
 }
 
-.article-content h3 {
+.article-content h3 .link_connect{
     color: #002B5B;
     text-align: justify;
     font-family: Inter;
@@ -2772,6 +2772,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 26.299px;
+    text-decoration: none;
 }
 
 .article-content p {
